@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Головна</title>
+</head>
+<body text="#000000">
+<style type="text/css">
+    span.inlineBlock {
+        display: inline-block;
+        vertical-align: top;
+    }
+    body{
+        background: #d76d62;
+    }
+    #table{
+        box-shadow: black 0.5em 0.5em 0.3em;
+        border: solid thick red;
+        border-radius: 1em;
+    }
+    .header1 {
+        box-shadow: black 0.5em 0.5em 0.3em;
+        border: solid thick red;
+        border-radius: 1em;
+        height: 100px;
+        background: radial-gradient(#96433b, #d33838);
+    }
+    .main {
+        padding: 14px;
+        margin-top: 35px;
+        height: 120px;
+    }
+    .footer {
+        border: solid thick red;
+        border-radius: 1em;
+        box-shadow: black 0.5em 0.5em 0.3em;
+        height: 140px;
+        margin-top: 80px;
+        background: linear-gradient(to bottom, #ad5148 0%, #a21a1a 100%);
+        text-align: center;
+        font-size: 14px;
+    }
+    /* The side navigation menu */
+    .sidebar {
+        border: solid thick red;
+        border-radius: 1em;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #a21a1a;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+
+    /* Sidebar links */
+    .sidebar a {
+        display: block;
+        color: #000000;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    /* Active/current link */
+    .sidebar a.active {
+        background-color: #96433b;
+        color: white;
+    }
+
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+
+    /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+    div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+    }
+
+    /* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) {
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .sidebar a {
+            float: left;
+        }
+
+        div.content {
+            margin-left: 0;
+        }
+    }
+
+    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 400px) {
+        .sidebar a {
+            text-align: center;
+            float: none;
+        }
+    }
+
+    .rr {
+        font-family: Pompadur, 'Comic Sans MS', cursive;
+    }
+
+    .colortext {
+        color: #a21a1a;
+    }
+
+    .colortext1 {
+        color: #38234d;
+    }
+</style>
+<!-- The sidebar -->
+<div class="sidebar">
+
+    <a class="active" href="index.html">Головна</a>
+    <a href="index2.html">Розв'язання функції</a>
+    <a href="index3.html">Сторінка з "alert"</a>
+    <a href="index4.html">Годинник</a>
+</div>
+<!-- Page content -->
+<div class="content">
+    <div class="header1">
+
+    </div>
+    <div class="main">
+        <h1><span class="colortext">Головна сторінка лабораторної роботи №15</h1></span>
+        <hr></hr>
+        <p><span class="colortext1"> Вивід кнопкою функції "alert" </span></p>
+    </div>
+
+    <br><br><br>
+    <h1 class="colortext1">
+        <center><script language="JavaScript">
+            document.write("My name is Misha!")
+        </script></center>
+    </h1>
+    <br>
+    <br>
+    <center>
+        <form>
+            <input  type="button" value="Click me" onClick="alert('Я народився 18 листопада 2004 року')">
+        </form>
+        <br>
+        <br><br>
+        <br>
+        <script language="JavaScript">
+            function myFunction() {
+                document.write("Ласкаво просимо!<br>");
+                document.write("Це JavaScript!<br>");}
+            myFunction();
+            myFunction();
+            myFunction();
+        </script>
+        <br><br>
+        <br><br><br><br><br><br>
+    <div class="footer">
+        <br>
+        <h1>Сайт створено Чумаком Михайлом спеціально для Лабораторної роботи №15</h1>
+    </div>
+</div>
+
+</body>
+</html>
